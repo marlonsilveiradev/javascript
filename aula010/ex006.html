@@ -24,7 +24,7 @@
     <script>
         var entendendoavar = window.document.getElementById('area') // Faz a ligação com o elemento nesse exemplo por ID com o conteudo html
         entendendoavar.addEventListener('click' , clicar) //addEventListener monitora a verificação do caso
-        entendendoavar.addEventListener('mouseenter' , entrar)
+        entendendoavar.addEventListener('mouseenter' , entrar) //Tomar cuidado em colocar todas as virgulas e pontos
         entendendoavar.addEventListener('mouseout' , saiu)
 function clicar() {
     
@@ -37,7 +37,6 @@ function entrar() {
 }
 function saiu() {
 entendendoavar.innerText = "Saiu!"
-entendendoavar.style.background = 'pink'
 }
     </script>
 </body>
