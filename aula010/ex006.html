@@ -20,12 +20,14 @@
 <body>
     <div id="area">
         Interaja...
+        <input type="number" name="" id="">
     </div>
     <script>
         var entendendoavar = window.document.getElementById('area') // Faz a ligação com o elemento nesse exemplo por ID com o conteudo html
         entendendoavar.addEventListener('click' , clicar) //addEventListener monitora a verificação do caso
         entendendoavar.addEventListener('mouseenter' , entrar) //Tomar cuidado em colocar todas as virgulas e pontos
         entendendoavar.addEventListener('mouseout' , saiu)
+        entendendoavar.addEventListener('mousemove' , movendo)
 function clicar() {
     
     entendendoavar.innerText = "Clicou!" // Faz mudar o conteudo da variavel (innertext)
@@ -37,6 +39,9 @@ function entrar() {
 }
 function saiu() {
 entendendoavar.innerText = "Saiu!"
+}
+function movendo() {
+    entendendoavar.innerText = 'Pare Quieto'
 }
     </script>
 </body>
